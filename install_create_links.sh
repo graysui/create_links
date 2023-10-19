@@ -42,6 +42,9 @@ fi
 # 获取当前路径（也就是脚本的安装位置）
 INSTALL_PATH=$(pwd)
 
+# 删除安装脚本
+rm "$INSTALL_PATH/create_links/install_create_links.sh"
+
 echo "============================================"
 echo "请修改$INSTALL_PATH/create_links/config.ini配置文件"
 echo "修改完成后，请执行以下步骤："
