@@ -9,6 +9,10 @@ else
     USE_SUDO=""
 fi
 
+# 更新软件包列表
+echo "Updating package lists..."
+$USE_SUDO apt update 2>&1
+
 # 检查Python3是否已经安装
 if ! command -v python3 &> /dev/null; then
     echo "Python3 is not installed. Installing..."
